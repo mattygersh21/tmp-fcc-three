@@ -1,0 +1,44 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's client-side javascript file -->
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>
+        The Timestamp Microservice
+      </h1>
+      <p>
+        Welcome to the timestamp microservice! To access it enter this URL - https://tmp-fcc-three.glitch.me/api/timestamp/. Entering the URL will return a UNIX date as well as a UTC date in a JSON object.
+      </p>
+      <p>
+        If you'd like to retrieve UNIX and UTC timestamps for a specific date append the particular date of interest to the end of the above given URL. For example, entering the following: <a href="https://tmp-fcc-three.glitch.me/api/timestamp/1983-7-25" target="blank">https://tmp-fcc-three.glitch.me/api/timestamp/1983-7-25</a> would return this JSON object:
+      </p>
+      {"unix":427939200000,"utc":"Mon, 25 Jul 1983 00:00:00 GMT"}        
+      </p>
+    <p>
+      Multiple date formats may be appended to the end of the URL, including but not limited to the examples of 1983-7-25 and 42793900000. Go ahead and give it a try!
+    </p>
+    </header>
+  </body>
+</html>
